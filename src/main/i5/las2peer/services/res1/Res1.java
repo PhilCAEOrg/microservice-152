@@ -115,7 +115,10 @@ public class Res1 extends RESTService {
 
 
 
-     
+    JSONArray result = new JSONArray(); 
+    result.add("Item 1"); 
+    result.add("Item 2"); 
+    result.add("Item 3"); 
     
 
     return Response.status(HttpURLConnection.HTTP_OK).entity(result.toJSONString()).build();
