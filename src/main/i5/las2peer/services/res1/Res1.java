@@ -97,12 +97,12 @@ public class Res1 extends RESTService {
    * testGet
    *
    * 
-   *
+   * @param   a JSONObject
    * 
    * @return Response 
    * 
    */
-  @GET
+  @POST
   @Path("/test")
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.TEXT_PLAIN)
@@ -110,7 +110,8 @@ public class Res1 extends RESTService {
        @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "resd")
   })
   @ApiOperation(value = "testGet", notes = " ")
-  public Response testGet() {
+  public Response testGet(String ) {
+    JSONObject _JSON = (JSONObject) JSONValue.parse();
 
 
 
